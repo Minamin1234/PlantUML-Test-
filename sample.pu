@@ -1,0 +1,53 @@
+@startuml
+class Object {
+
+}
+
+class Weapon {
+    Bullet _bullet
+    int _capacity
+    int _firerate
+    void fire()
+    void reload()
+}
+
+class SMG {
+
+}
+
+class Shotgun {
+    float diffusion
+    int bullets
+}
+
+class Bullet {
+    int _damage
+    int _velocity
+    void applydamage()
+    void on_hit()
+}
+
+class SMGBullet {
+
+}
+
+class ShotShell {
+
+}
+
+
+Object <|-- Weapon
+Object <|-- Bullet
+
+Weapon <|-- SMG
+Weapon <|-- Shotgun
+Weapon o-- Bullet
+
+Bullet <|-- SMGBullet
+Bullet <|-- ShotShell
+
+SMG o-- SMGBullet
+
+Shotgun o-- ShotShell
+
+@enduml
