@@ -26,3 +26,5 @@ PlantUML (publisher: "jebbs")
 本リポジトリの`sample.pu`を配置している。武器と弾薬のクラス図を書いてみた。
 
 矢印はそのクラスからの継承(汎化)、ダイヤマーク矢印は関係(集約/コンポジション)を表す。
+
+![.\out\sample\sample.png](UML)
